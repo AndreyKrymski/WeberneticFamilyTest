@@ -21,7 +21,7 @@
             малых
             проектов. Используя
             знания и накопленный опыт мы можем предложить</p>
-          <button class="button">
+          <button class="button" id="openModalBtn">
             <div class="text_button">
               Попробовать бесплатно
             </div>
@@ -38,6 +38,40 @@
 
     </div>
   </div>
+
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <div class="closeModalBtn_container">
+        <button id="closeModalBtn" class="closeModalBtn">&times;</button>
+      </div>
+      <div class="login-form">
+        <div class="modal-header">
+          <h2>Войти в систему</h2>
+        </div>
+        <form>
+          <input type="text" id="email-phone" name="email-phone" placeholder="Email/Телефон" required>
+          <input type="password" id="password" name="password" placeholder="Пароль" required>
+
+          <div class="actions">
+            <label>
+              <input type="checkbox" name="remember"> Запомнить меня
+            </label>
+
+          </div>
+          <a href="#">Восстановить</a>
+
+          <button class="submitButton" type="submit">Войти</button>
+        </form>
+
+        <div class="register">
+          <button type="submit">Зарегистрироваться</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
+<script src="./index.js"></script>
 
 </html>
